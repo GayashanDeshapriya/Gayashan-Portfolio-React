@@ -1,0 +1,22 @@
+[  {
+  "title": "UFS Logistic Company Website",
+  "image": "./projectImages/ufs.png",
+  "description": "Welcome to the official website of UNIVERSAL FREIGHT SOLUTION LLC, a trusted logistics and freight forwarding company located in the United Arab Emirates (UAE). Explore our comprehensive range of services and discover how we can streamline your supply chain with efficiency and reliability.",
+  "technologies": "React | HTML | CSS | Boostrap | EmailJs",
+  "github": "https://github.com/GayashanDeshapriya/UFS_Official_Website",
+  "deployed": "https://ufsdxb.com/",
+  "bgcolor": "#232323",
+  "id": "1"
+},
+  {
+    "title": "Pocket Guard",
+    "image": "./projectImages/pocket.png",
+    "description": "Pocket Guard is a personal finance app that helps individuals to manage their finances and reach their saving goals. With Pocket Guard, users can track their expenses and monitor their budget in real-time.",
+    "technologies": "Kotlin | FireBase | SQLite room | Android Studio",
+    "github": "https://github.com/GayashanDeshapriya/PocketGuard_MobileApp.git",
+    "deployed": "https://github.com/GayashanDeshapriya/PocketGuard_MobileApp.git",
+    "bgcolor": "#232323",
+    "id": "2"
+  }
+ 
+]
