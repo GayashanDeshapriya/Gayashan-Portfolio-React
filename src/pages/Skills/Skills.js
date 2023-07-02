@@ -1,12 +1,8 @@
 
 import meter1 from "../../images/meter1.png";
-import meter2 from "../../images/meter2.png";
 import meter3 from "../../images/meter3.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../../images/arrow1.svg";
-import arrow2 from "../../images/arrow2.svg";
-import colorSharp from "../../images/color-sharp.png";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import PageHeader from "../../components/PageHeader";

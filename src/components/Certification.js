@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Box, styled, Button } from "@mui/material";
+import { Box, styled } from "@mui/material";
 import { Link } from "react-router-dom";
-import img1 from "../../src/images/Certificates/Python.jpg";
+
 
 const StyleConstants = {
   SPACE_BETWEEN_SECTIONS: 20,

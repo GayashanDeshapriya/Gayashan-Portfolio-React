@@ -14,7 +14,7 @@ import icon10 from "../images/Icons/Python-Dark.svg";
 import icon11 from "../images/Icons/PHP-Dark.svg";
 import icon12 from "../images/Icons/Java-Dark.svg";
 
-import PageHeader from "../components/PageHeader";
+
 
 const Root = styled.div`
   padding: 10px;
