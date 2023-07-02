@@ -33,7 +33,7 @@ const InfoWrapper = styled(Box)(() => ({
 }));
 
 const ImageBox = styled(Box)(({ theme }) => ({
-  marginRight:150,
+  marginRight:20,
   width: 400,
   minHeight: 250,
   borderWidth: 1,
@@ -96,7 +96,7 @@ const Certificates = ({
                   <InfoWrapper>
                     <div className="name bold">{name}</div>
                     <div>
-                      <b>Org:</b> <h1>{org}</h1>
+                      <b></b> <h1>{org}</h1>
                     </div>
                     <div>
                       <b>Issued:</b> {issued}
