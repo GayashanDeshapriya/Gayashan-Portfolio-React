@@ -33,7 +33,7 @@ const InfoWrapper = styled(Box)(() => ({
 }));
 
 const ImageBox = styled(Box)(({ theme }) => ({
-  marginRight:20,
+  marginRight: 20,
   width: 400,
   minHeight: 250,
   borderWidth: 1,
