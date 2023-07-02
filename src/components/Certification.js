@@ -3,19 +3,17 @@ import { useInView } from "react-intersection-observer";
 import { Box, styled } from "@mui/material";
 import { Link } from "react-router-dom";
 
-
 const StyleConstants = {
   SPACE_BETWEEN_SECTIONS: 20,
   SIZE_ITEM_TITLE: 20,
 };
 
-
-
 const CertificationWrapper = styled(Box)(({ theme }) => ({
   display: "flex",
+  flexDirection: "column",
   justifyContent: "space-between",
   marginBottom: StyleConstants.SPACE_BETWEEN_SECTIONS,
-  [theme.breakpoints.down("md")]: {
+  [theme.breakpoints.up("md")]: {
     flexDirection: "row",
   },
 }));
@@ -23,11 +21,11 @@ const CertificationWrapper = styled(Box)(({ theme }) => ({
 const InfoWrapper = styled(Box)(() => ({
   paddingRight: 100,
   lineHeight: 1.53,
-  
+
   "& .name": {
     marginBottom: 15,
     fontSize: StyleConstants.SIZE_ITEM_TITLE,
-    color:StyleConstants.WHITE_COLOR,
+    color: StyleConstants.WHITE_COLOR,
   },
   "& .actions": {
     margin: "10px 0",
@@ -35,19 +33,19 @@ const InfoWrapper = styled(Box)(() => ({
 }));
 
 const ImageBox = styled(Box)(({ theme }) => ({
-  marginRight:0,
-  width: 400,
+  marginRight: 0,
+  width: "100%",
   minHeight: 250,
   borderWidth: 1,
   borderStyle: "solid",
   borderColor: StyleConstants.WHITE_COLOR,
   "& img": {
-    width: 400,
+    width: "100%",
   },
-  [theme.breakpoints.down("sm")]: {
-    width: 350,
+  [theme.breakpoints.up("sm")]: {
+    width: "70%",
     "& img": {
-      width: 350,
+      width: "100%",
     },
   },
 }));
@@ -92,6 +90,9 @@ const Certificates = ({
                 transition={{ duration: 0.4, ease: "easeInOut" }}
               >
                 <CertificationWrapper>
+                  <ImageBox>
+                    <img src={url} alt="certificate" />
+                  </ImageBox>
                   <InfoWrapper>
                     <div className="name bold">{name}</div>
                     <div>
@@ -110,13 +111,14 @@ const Certificates = ({
                         <b>Id:</b> {credentialId}
                       </div>
                     )}
-                    <div className="col-12 formGroup formSubmit" >
-                      <button type="submit" className="btn"><Link to={credentialUrl} target="_blank" rel="noreferrer" style={{ color: "white" }}>View Certificate</Link></button>
+                    <div className="col-12 formGroup formSubmit">
+                      <button type="submit" className="btn">
+                        <Link to={credentialUrl} target="_blank" rel="noreferrer" style={{ color: "white" }}>
+                          View Certificate
+                        </Link>
+                      </button>
                     </div>
                   </InfoWrapper>
-                  <ImageBox>
-                    <img src={url} alt="certificate" />
-                  </ImageBox>
                 </CertificationWrapper>
               </motion.div>
             </div>
