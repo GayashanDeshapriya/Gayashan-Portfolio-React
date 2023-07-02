@@ -4,8 +4,8 @@ import { Box, styled } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const StyleConstants = {
-  SPACE_BETWEEN_SECTIONS: 20,
-  SIZE_ITEM_TITLE: 20,
+  SPACE_BETWEEN_SECTIONS: 40,
+  SIZE_ITEM_TITLE: 30,
 };
 
 const CertificationWrapper = styled(Box)(({ theme }) => ({
@@ -19,11 +19,11 @@ const CertificationWrapper = styled(Box)(({ theme }) => ({
 }));
 
 const InfoWrapper = styled(Box)(() => ({
-  paddingRight: 100,
+  paddingRight: 50,
   lineHeight: 1.53,
 
   "& .name": {
-    marginBottom: 15,
+    marginBottom: 30,
     fontSize: StyleConstants.SIZE_ITEM_TITLE,
     color: StyleConstants.WHITE_COLOR,
   },
@@ -33,19 +33,19 @@ const InfoWrapper = styled(Box)(() => ({
 }));
 
 const ImageBox = styled(Box)(({ theme }) => ({
-  marginRight: 0,
-  width: "100%",
+  marginRight:150,
+  width: 400,
   minHeight: 250,
   borderWidth: 1,
   borderStyle: "solid",
   borderColor: StyleConstants.WHITE_COLOR,
   "& img": {
-    width: "100%",
+    width: 400,
   },
-  [theme.breakpoints.up("sm")]: {
-    width: "70%",
+  [theme.breakpoints.down("sm")]: {
+    width: 350,
     "& img": {
-      width: "100%",
+      width: 350,
     },
   },
 }));
