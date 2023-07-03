@@ -50,19 +50,19 @@ function Skills() {
   };
 
   const IconStyle = {
-    width: "250px",
-    height: "250px",
-    padding: "30px"
+    width: "200px",
+    height: "200px",
+    padding: "10px"
   };
 
   
 
   return (
-    <section className="contact">
+    <section className="about">
       <PageHeader title="Skills & Technologies" description="explore my knowledge" />
       <div className="contactWrap container">
         <div className="row">
-         <div className="col-12">
+          <div className="col-12 col-lg-12">
          <div className="textContainer" style={styles.textContainer}>
           <motion.div
           className="skills"
@@ -91,18 +91,8 @@ function Skills() {
 
           </motion.div><br></br><br></br>
           
-          <motion.div
-          className="skills"
-          ref={ref}
-          initial={{ y: "10vw", opacity: 0 }}
-          animate={inView ? { y: 0, opacity: 1 } : { y: "10vw", opacity: 0 }}
-          transition={{ duration: 0.4, ease: "easeInOut" }}
-          
-          
-          >
-        
+         
           <Tech/>
-          </motion.div>
             </div>
             </div>
          </div>
