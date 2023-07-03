@@ -15,6 +15,9 @@ import icon11 from "../images/Icons/PHP-Dark.svg";
 import icon12 from "../images/Icons/Java-Dark.svg";
 import icon13 from "../images/Icons/Github-Dark.svg";
 import icon14 from "../images/Icons/CPP.svg";
+import icon15 from "../images/Icons/MySQL-Dark.svg";
+import icon16 from "../images/Icons/MongoDB.svg";
+import icon17 from "../images/Icons/Firebase-Dark.svg";
 
 
 
@@ -172,7 +175,35 @@ export const Tech = () => {
             </GridItemWrapper>
           </Col>
 
-          <h1>Other Essencial Technologies</h1>
+          <h1>Database Technologies</h1>
+          <Col lg={2} md={3} sm={4} xs={6}>
+            <GridItemWrapper>
+              <GridItemContent>
+                <img src={icon15} alt="Summoned Skull" style={IconStyle} />
+                <p>My SQL</p>
+              </GridItemContent>
+            </GridItemWrapper>
+          </Col>
+
+          <Col lg={2} md={3} sm={4} xs={6}>
+            <GridItemWrapper>
+              <GridItemContent>
+                <img src={icon16} alt="Summoned Skull" style={IconStyle} />
+                <p>MongoDB</p>
+              </GridItemContent>
+            </GridItemWrapper>
+          </Col>
+          <Col lg={2} md={3} sm={4} xs={6}>
+            <GridItemWrapper>
+              <GridItemContent>
+                <img src={icon17} alt="Summoned Skull" style={IconStyle} />
+                <p>Firebase</p>
+              </GridItemContent>
+            </GridItemWrapper>
+          </Col>
+
+
+          <h1>Other Essential Technologies</h1>
           <Col lg={2} md={3} sm={4} xs={6}>
             <GridItemWrapper>
               <GridItemContent>
