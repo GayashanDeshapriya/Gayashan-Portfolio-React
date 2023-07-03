@@ -19,7 +19,7 @@ const CertificationWrapper = styled(Box)(({ theme }) => ({
 }));
 
 const InfoWrapper = styled(Box)(() => ({
-  paddingLeft: 40,
+  paddingLeft: 15,
   lineHeight: 1.53,
 
   "& .name": {
@@ -125,9 +125,9 @@ const Certificates = ({
                 transition={{ duration: 0.4, ease: "easeInOut" }}
                  >
                 <InfoWrapper>
-                    <div className="name bold">{name}</div>
+                    <div className="name"><h6>{name}</h6></div>
                     <div>
-                      <b></b> <h1>{org}</h1>
+                      <b></b> {org}
                     </div>
                     <div>
                       <b>Issued:</b> {issued}
