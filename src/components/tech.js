@@ -40,7 +40,7 @@ const GridItemContent = styled.div`
 const IconStyle = {
   width: "100px",
   height: "100px",
-  padding: "15px"
+  padding: "20px"
 };
 
 export const Tech = () => {
