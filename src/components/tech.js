@@ -144,7 +144,7 @@ export const Tech = () => {
           </Row>
           
          
-          <h1>Mpbile App Development</h1>
+          <h1>Mobile App Development</h1>
           <Col lg={2} md={3} sm={4} xs={6}>
             <GridItemWrapper>
               <GridItemContent>
