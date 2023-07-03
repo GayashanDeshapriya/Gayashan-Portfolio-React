@@ -13,6 +13,7 @@ import icon9 from "../images/Icons/React-Dark.svg";
 import icon10 from "../images/Icons/Python-Dark.svg";
 import icon11 from "../images/Icons/PHP-Dark.svg";
 import icon12 from "../images/Icons/Java-Dark.svg";
+import icon13 from "../images/Icons/Github-Dark.svg";
 
 
 
@@ -158,6 +159,16 @@ export const Tech = () => {
               <GridItemContent>
                 <img src={icon3} alt="Summoned Skull" style={IconStyle} />
                 <p>Kotlin</p>
+              </GridItemContent>
+            </GridItemWrapper>
+          </Col>
+
+          <h1>Other Essencial Technologies</h1>
+          <Col lg={2} md={3} sm={4} xs={6}>
+            <GridItemWrapper>
+              <GridItemContent>
+                <img src={icon13} alt="Summoned Skull" style={IconStyle} />
+                <p>GitHub</p>
               </GridItemContent>
             </GridItemWrapper>
           </Col>
