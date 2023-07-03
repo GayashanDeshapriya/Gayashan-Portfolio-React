@@ -13,13 +13,13 @@ const CertificationWrapper = styled(Box)(({ theme }) => ({
   flexDirection: "column",
   justifyContent: "space-between",
   marginBottom: StyleConstants.SPACE_BETWEEN_SECTIONS,
-  [theme.breakpoints.up("md")]: {
+  [theme.breakpoints.up("sm")]: {
     flexDirection: "row",
   },
 }));
 
 const InfoWrapper = styled(Box)(() => ({
-  paddingRight: 50,
+  paddingLeft: 40,
   lineHeight: 1.53,
 
   "& .name": {
@@ -33,9 +33,9 @@ const InfoWrapper = styled(Box)(() => ({
 }));
 
 const ImageBox = styled(Box)(({ theme }) => ({
-  marginRight: 20,
+  paddingRight: 40,
   width: 400,
-  minHeight: 250,
+  minHeight: 200,
   borderWidth: 1,
   borderStyle: "solid",
   borderColor: StyleConstants.WHITE_COLOR,
@@ -43,9 +43,9 @@ const ImageBox = styled(Box)(({ theme }) => ({
     width: 400,
   },
   [theme.breakpoints.down("sm")]: {
-    width: 350,
+    width: 325,
     "& img": {
-      width: 350,
+      width: 325,
     },
   },
 }));
@@ -76,24 +76,55 @@ const Certificates = ({
     },
   };
 
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 4000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
+
+
   return (
     <section className="contact">
       <div className="contactWrap container">
         <div className="row">
           <div className="col-12">
             <div className="textContainer" style={styles.textContainer}>
-              <motion.div
-                className="skills"
-                ref={ref}
-                initial={{ y: "10vw", opacity: 0 }}
-                animate={inView ? { y: 0, opacity: 1 } : { y: "10vw", opacity: 0 }}
-                transition={{ duration: 0.4, ease: "easeInOut" }}
-              >
-                <CertificationWrapper>
+              
+                <CertificationWrapper responsive={responsive}>
+                <motion.div
+                    className=""
+                    ref={ref}
+                    initial={{ x: "-10vw", opacity: 0 }}
+                    animate={inView ? { x: 0, opacity: 1 } : { x: "-10vw", opacity: 0 }}
+                    transition={{ duration: 0.4, ease: "easeInOut" }}
+                 >
                   <ImageBox>
                     <img src={url} alt="certificate" />
                   </ImageBox>
-                  <InfoWrapper>
+                  </motion.div>
+
+                  <motion.div
+                className="skills"
+                ref={ref}
+                initial={{ x: "10vw", opacity: 0 }}
+                animate={inView ? { x: 0, opacity: 1 } : { x: "10vw", opacity: 0 }}
+                transition={{ duration: 0.4, ease: "easeInOut" }}
+                 >
+                <InfoWrapper>
                     <div className="name bold">{name}</div>
                     <div>
                       <b></b> <h1>{org}</h1>
@@ -119,8 +150,10 @@ const Certificates = ({
                       </button>
                     </div>
                   </InfoWrapper>
-                </CertificationWrapper>
               </motion.div>
+                  
+                </CertificationWrapper>
+              
             </div>
           </div>
         </div>
