@@ -58,11 +58,11 @@ function Skills() {
   
 
   return (
-    <section className="about">
-      <PageHeader title="Skills & Technologies" description="explore my knowledge" />
+    <section className="contact">
+      <PageHeader title="Skills/Technologies" description="explore my knowledge" />
       <div className="contactWrap container">
-        <div className="row">
-          <div className="col-12 col-lg-12">
+      <div className="column">
+          <div className="col-12 ">
          <div className="textContainer" style={styles.textContainer}>
           <motion.div
           className="skills"
