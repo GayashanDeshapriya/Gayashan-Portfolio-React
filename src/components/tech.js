@@ -14,6 +14,7 @@ import icon10 from "../images/Icons/Python-Dark.svg";
 import icon11 from "../images/Icons/PHP-Dark.svg";
 import icon12 from "../images/Icons/Java-Dark.svg";
 import icon13 from "../images/Icons/Github-Dark.svg";
+import icon14 from "../images/Icons/CPP.svg";
 
 
 
@@ -118,19 +119,27 @@ export const Tech = () => {
           
           
          <Row><h1>Programming Languages</h1>
-          <Col lg={2} md={3} sm={4} xs={6}>
+         <Col lg={2} md={3} sm={4} xs={6}>
             <GridItemWrapper>
               <GridItemContent>
-                <img src={icon10} alt="Blue Eyes Dragon" style={IconStyle} />
-                <p>Python</p>
+                <img src={icon6} alt="Blue Eyes Dragon" style={IconStyle} />
+                <p>C</p>
               </GridItemContent>
             </GridItemWrapper>
           </Col>
           <Col lg={2} md={3} sm={4} xs={6}>
             <GridItemWrapper>
               <GridItemContent>
-                <img src={icon6} alt="Blue Eyes Dragon" style={IconStyle} />
-                <p>C</p>
+                <img src={icon14} alt="Blue Eyes Dragon" style={IconStyle} />
+                <p>C++</p>
+              </GridItemContent>
+            </GridItemWrapper>
+          </Col>
+          <Col lg={2} md={3} sm={4} xs={6}>
+            <GridItemWrapper>
+              <GridItemContent>
+                <img src={icon10} alt="Blue Eyes Dragon" style={IconStyle} />
+                <p>Python</p>
               </GridItemContent>
             </GridItemWrapper>
           </Col>
