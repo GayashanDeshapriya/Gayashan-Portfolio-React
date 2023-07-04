@@ -126,7 +126,7 @@ const Home = () => {
             <span
               className="txt-rotate"
               dataPeriod="1000"
-              data-rotate='["Fullstack Developer", "Web Designer", "UI/UX Designer", "Graphic Designer"]'
+              data-rotate='[" A Full Stack Developer", "A Web Designer", "A UI/UX Designer", "A Graphic Designer"]'
             >
               <span className="wrap">{text}</span>
             </span>
