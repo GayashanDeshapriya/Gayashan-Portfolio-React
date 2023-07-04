@@ -24,7 +24,7 @@ const NavLinks = () => {
         </NavLink>
 
         <NavLink to="/skills" onClick={() => setIsMenuOpen(false)}>
-          Skills
+        Skills/Technologies
         </NavLink>
 
         <NavLink to="/certificate" onClick={() => setIsMenuOpen(false)}>
