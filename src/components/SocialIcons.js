@@ -22,6 +22,9 @@ const SocialIcons = () => {
       <a className="icon" style={styles.icon} href="https://twitter.com/mr_deshz19">
         <i className="fa-brands fa-twitter" aria-hidden="true" title="Michael Yeates' Twitter Profile"></i>
       </a>
+      <a className="icon" style={styles.icon} href="https://www.behance.net/gayashan_96">
+        <i className="fa-brands fa-behance" aria-hidden="true" title="Michael Yeates' Twitter Profile"></i>
+      </a>
     </div>
   );
 };
