@@ -22,7 +22,7 @@ CertificationsData.map((Certificates, i) => (
   return (
     <section className="portfolio">
       <PageHeader title="Certificates" description="who certified me" />
-      <div className="column">
+      <div className="row">
         <CertificatetList />
       </div>
     </section>

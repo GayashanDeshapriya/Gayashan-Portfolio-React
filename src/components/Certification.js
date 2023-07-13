@@ -1,164 +1,83 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Box, styled } from "@mui/material";
-import { Link } from "react-router-dom";
+import Modal from "react-modal";
+import { useState } from "react";
+import closeModal from "../images/close.svg";
+import img1 from '../images/Certificates/Python.jpg'
 
-const StyleConstants = {
-  SPACE_BETWEEN_SECTIONS: 40,
-  SIZE_ITEM_TITLE: 30,
-};
-
-const CertificationWrapper = styled(Box)(({ theme }) => ({
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "space-between",
-  marginBottom: StyleConstants.SPACE_BETWEEN_SECTIONS,
-  [theme.breakpoints.up("sm")]: {
-    flexDirection: "row",
-  },
-}));
-
-const InfoWrapper = styled(Box)(() => ({
-  paddingLeft: 15,
-  lineHeight: 1.53,
-
-  "& .name": {
-    marginBottom: 30,
-    fontSize: StyleConstants.SIZE_ITEM_TITLE,
-    color: StyleConstants.WHITE_COLOR,
-  },
-  "& .actions": {
-    margin: "10px 0",
-  },
-}));
-
-const ImageBox = styled(Box)(({ theme }) => ({
-  paddingRight: 40,
-  width: 400,
-  minHeight: 200,
-  borderWidth: 1,
-  borderStyle: "solid",
-  borderColor: StyleConstants.WHITE_COLOR,
-  "& img": {
-    width: 400,
-  },
-  [theme.breakpoints.down("sm")]: {
-    width: 325,
-    "& img": {
-      width: 325,
-    },
-  },
-}));
-
-const Certificates = ({
-  name = "",
-  org = "",
-  issued = "",
-  expiry = "",
-  credentialId = "",
-  credentialUrl = "",
-  url = "",
-}) => {
+const Certificates = ({name,org,issued,expiry,credentialId,bgcolor,credentialUrl,id}) => {
   const [ref, inView] = useInView({
     threshold: 0.5,
     triggerOnce: true,
   });
 
-  const styles = {
-    textContainer: {
-      display: "flex",
-      flexDirection: "column",
-      letterSpacing: "1px",
-      textAlign: "center",
-      zIndex: "1",
-      color: "#fff",
-      textShadow: "1px 1px 3px #000",
-    },
+  const variants = {
+    hidden: { x: id % 2 === 0 ? "10vw" : "-10vw", opacity: 0 },
+    visible: { x: 0, opacity: 1 },
   };
 
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5
-    },
-    desktop: {
-      breakpoint: { max: 4000, min: 1024 },
-      items: 3
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
-  };
+  Modal.setAppElement("#root");
 
+  const [showModal, setShowModal] = useState(false);
+  const handleOpenModal = () => setShowModal(true);
+  const handleCloseModal = () => setShowModal(false);
 
   return (
-    <section className="contact">
-      <div className="contactWrap container">
-        <div className="row">
-          <div className="col-12">
-            <div className="textContainer" style={styles.textContainer}>
-              
-                <CertificationWrapper responsive={responsive}>
-                <motion.div
-                    className=""
-                    ref={ref}
-                    initial={{ x: "-10vw", opacity: 0 }}
-                    animate={inView ? { x: 0, opacity: 1 } : { x: "-10vw", opacity: 0 }}
-                    transition={{ duration: 0.4, ease: "easeInOut" }}
-                 >
-                  <ImageBox>
-                    <img src={url} alt="certificate" />
-                  </ImageBox>
-                  </motion.div>
-
-                  <motion.div
-                className="skills"
-                ref={ref}
-                initial={{ x: "10vw", opacity: 0 }}
-                animate={inView ? { x: 0, opacity: 1 } : { x: "10vw", opacity: 0 }}
-                transition={{ duration: 0.4, ease: "easeInOut" }}
-                 >
-                <InfoWrapper>
-                    <div className="name"><h6>{name}</h6></div>
-                    <div>
-                      <b></b> {org}
-                    </div>
-                    <div>
-                      <b>Issued:</b> {issued}
-                    </div>
-                    {expiry && (
-                      <div>
-                        <b>Expiry:</b> {expiry}
-                      </div>
-                    )}
-                    {credentialId && (
-                      <div>
-                        <b>Id:</b> {credentialId}
-                      </div>
-                    )}
-                    <div className="col-12 formGroup formSubmit">
-                      <button type="submit" className="btn">
-                        <Link to={credentialUrl} target="_blank" rel="noreferrer" style={{ color: "white" }}>
-                          View Certificate
-                        </Link>
-                      </button>
-                    </div>
-                  </InfoWrapper>
-              </motion.div>
-                  
-                </CertificationWrapper>
-              
-            </div>
-          </div>
+    <motion.div
+      ref={ref}
+      className="col-sm-12 col-lg-6"
+      variants={variants}
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
+      transition={{ duration: 0.4, ease: "easeInOut" }}
+    >
+      <div
+        style={{ backgroundColor: bgcolor }}
+        className="projectCard d-flex align-items-center justify-content-center p-5"
+        onClick={handleOpenModal}
+      >
+        <div className="textWrap col-6 d-flex flex-column justify-content-center align-items-center m-5">
+          <p className="tech">
+            <em>{org}</em>
+          </p>
+          <h3 className="projectTitle">{name}</h3>
+          
+          <span className="viewWork">View Work &#8594;</span>
+        </div>
+        <div className="imageContainer col-6 d-flex align-items-center justify-content-center">
+          <img src={img1} alt="Laptop displaying application" />
         </div>
       </div>
-    </section>
+      <Modal
+        isOpen={showModal}
+        onRequestClose={handleCloseModal}
+        style={{
+          content: {
+            backgroundColor: "#101010",
+            color: "#9f9f9f",
+            padding: "60px",
+            display: "flex",
+            flexDirection: "column",
+            width: "400px",
+            top: "50%",
+            left: "50%",
+            right: "auto",
+            bottom: "auto",
+            marginRight: "-50%",
+            transform: "translate(-50%, -50%)",
+            zIndex: "999",
+          },
+        }}
+      >
+        <img src={closeModal} className="closeMenu closeModal" onClick={handleCloseModal} alt="Close"></img>
+        <h3 className="modalTitle">{name}</h3>
+        <p className="tech"><em>issued Date :- {issued}</em></p>
+        <button className="btn" onClick={() => (window.location.href = credentialUrl)}>
+          View Certificate
+        </button>
+        
+      </Modal>
+    </motion.div>
   );
 };
 
