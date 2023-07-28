@@ -14,10 +14,13 @@ function App() {
   };
 
   return (
-    <>
+    
+      <>
+      
       <Header />
       <AnimatedRoutes personalDetails={personalDetails} />
-    </>
+      </>
+    
   );
 }
 
