@@ -41,6 +41,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
           transition={{ duration: 0.4, ease: "easeInOut" }}
         >
           <img src={aboutMeImg} alt={name} />
+          
         </motion.div>
         <motion.div
           className="personalInfo col-12 col-lg-8"
