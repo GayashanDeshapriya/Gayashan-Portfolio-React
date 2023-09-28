@@ -31,12 +31,8 @@ Build a React website to showcase the following:
 ## Homepage visuals
 
 
-![Imgur](https://i.imgur.com/zzTxoS2.png?1)
-![Imgur](https://i.imgur.com/voIJ0AG.png?1)
-![Imgur](https://i.imgur.com/xjHH6Hr.png?1)
-![Imgur](https://i.imgur.com/3JJlqb9.png?1)
-![Imgur](https://i.imgur.com/4MTPw56.png?1)
-![Imgur](https://i.imgur.com/dDprlF7.png?1)
+![Imgur](https://github.com/GayashanDeshapriya/my_portfolio/blob/master/src/images/Project%20images/full-stack.jpg)
+
 
 ## Skill set visuals
 
