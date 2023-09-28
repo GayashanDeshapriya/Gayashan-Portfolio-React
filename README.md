@@ -33,7 +33,3 @@ Build a React website to showcase the following:
 
 ![Imgur](https://github.com/GayashanDeshapriya/my_portfolio/blob/master/src/images/Project%20images/full-stack.jpg)
 
-
-## Skill set visuals
-
-![Imgur](https://i.imgur.com/bVE2xqe.png?1)
