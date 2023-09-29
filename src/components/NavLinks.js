@@ -30,6 +30,10 @@ const NavLinks = () => {
         <NavLink to="/certificate" onClick={() => setIsMenuOpen(false)}>
           Certifications
         </NavLink>
+
+        <NavLink to="/certificate" onClick={() => setIsMenuOpen(false)}>
+          Badges
+        </NavLink>
         
         <NavLink to="/portfolio" onClick={() => setIsMenuOpen(false)}>
           Projects
