@@ -5,7 +5,7 @@ import { useState } from "react";
 import closeModal from "../images/close.svg";
 import img1 from '../images/Certificates/Python.jpg'
 
-const Certificates = ({name,org,issued,expiry,credentialId,bgcolor,credentialUrl,id}) => {
+const Certificates = ({ name, org, issued, bgcolor, credentialUrl, id }) => {
   const [ref, inView] = useInView({
     threshold: 0.5,
     triggerOnce: true,
@@ -41,7 +41,7 @@ const Certificates = ({name,org,issued,expiry,credentialId,bgcolor,credentialUrl
             <em>{org}</em>
           </p>
           <h3 className="projectTitle">{name}</h3>
-          
+
           <span className="viewWork">View Work &#8594;</span>
         </div>
         <div className="imageContainer col-6 d-flex align-items-center justify-content-center">
@@ -75,7 +75,7 @@ const Certificates = ({name,org,issued,expiry,credentialId,bgcolor,credentialUrl
         <button className="btn" onClick={() => (window.location.href = credentialUrl)}>
           View Certificate
         </button>
-        
+
       </Modal>
     </motion.div>
   );

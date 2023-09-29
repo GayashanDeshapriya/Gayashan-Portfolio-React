@@ -4,7 +4,7 @@
   "description": "Welcome to the official website of UNIVERSAL FREIGHT SOLUTION LLC, a trusted logistics and freight forwarding company located in the United Arab Emirates (UAE). Explore our comprehensive range of services and discover how we can streamline your supply chain with efficiency and reliability.",
   "technologies": "React | HTML | CSS | Boostrap | EmailJs",
   "github": "https://github.com/GayashanDeshapriya/UFS_Official_Website",
-  "deployed": "https://ufsdxb.com/",
+  "deployed": "https://ufs-test.netlify.app/",
   "bgcolor": "#232323",
   "id": "1"
 },

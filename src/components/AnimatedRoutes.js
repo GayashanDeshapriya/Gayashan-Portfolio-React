@@ -3,8 +3,9 @@ import About from "../pages/about/About";
 import Portfolio from "../pages/portfolio/Portfolio";
 import Contact from "../pages/contact/Contact";
 import Home from "../pages/Home/home";
-import  Skills  from "../pages/Skills/Skills";
+import Skills from "../pages/Skills/Skills";
 import Certify from "../pages/certification/certifi";
+import Badges from "../pages/Badges/Badge";
 
 
 
@@ -32,11 +33,11 @@ const AnimatedRoutes = ({ personalDetails }) => {
       <Route path="/certificate" element={<Certify />} />
 
       <Route path="/portfolio" element={<Portfolio />} />
-      
+
+      <Route path="/badges" element={<Badges />} />
+
       <Route
-        path="/contact"
-        element={
-          <Contact name={personalDetails.name} location={personalDetails.location} email={personalDetails.email} />
+        path="/contact" element={<Contact name={personalDetails.name} location={personalDetails.location} email={personalDetails.email} />
         }
       />
     </Routes>

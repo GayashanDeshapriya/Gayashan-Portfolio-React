@@ -76,15 +76,19 @@ function Skills() {
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter3} alt="Image" style={IconStyle}/>
-                                <h1>Web Development</h1>
+                                <h1>Time Management</h1>
                             </div>
                             <div className="item" >
-                                <img src={meter1} alt="Image" style={IconStyle}/>
-                                <h1>Brand Identity</h1>
+                                <img src={meter3} alt="Image" style={IconStyle}/>
+                                <h1>Problem Solving</h1>
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="Image" style={IconStyle}/>
-                                <h1>Logo Design</h1>
+                                <h1></h1>
+                            </div>
+                            <div className="item">
+                                <img src={meter3} alt="Image" style={IconStyle}/>
+                                <h1></h1>
                             </div>
                             
                         </Carousel>

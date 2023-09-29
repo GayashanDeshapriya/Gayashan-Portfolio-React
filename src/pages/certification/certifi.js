@@ -3,8 +3,8 @@ import PageHeader from "../../components/PageHeader";
 import CertificationsData from "../certification/CertificationsData.json";
 
 const Certify = () => {
-const CertificatetList = () =>
-CertificationsData.map((Certificates, i) => (
+  const CertificatetList = () =>
+    CertificationsData.map((Certificates, i) => (
       <Certificate
         key={i}
         id={Certificates.id}
@@ -15,7 +15,7 @@ CertificationsData.map((Certificates, i) => (
         credentialId={Certificates.credentialId}
         credentialUrl={Certificates.credentialUrl}
         url={Certificates.url}
-        
+
       />
     ));
 
