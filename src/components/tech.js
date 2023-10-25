@@ -18,6 +18,7 @@ import icon14 from "../images/Icons/CPP.svg";
 import icon15 from "../images/Icons/MySQL-Dark.svg";
 import icon16 from "../images/Icons/MongoDB.svg";
 import icon17 from "../images/Icons/Firebase-Dark.svg";
+import icon18 from "../images/Icons/Angular-Dark.svg";
 
 
 
@@ -80,14 +81,7 @@ export const Tech = () => {
               </GridItemContent>
             </GridItemWrapper>
           </Col>
-          <Col lg={2} md={3} sm={4} xs={6}>
-            <GridItemWrapper>
-              <GridItemContent>
-                <img src={icon10} alt="Blue Eyes Dragon" style={IconStyle} />
-                <p>Python</p>
-              </GridItemContent>
-            </GridItemWrapper>
-          </Col>
+          
           
 
          <Row><h2>Frameworks and Libraries</h2>
@@ -99,7 +93,14 @@ export const Tech = () => {
               </GridItemContent>
             </GridItemWrapper>
           </Col>
-          
+          <Col lg={2} md={3} sm={4} xs={6}>
+            <GridItemWrapper>
+              <GridItemContent>
+                <img src={icon18} alt="Blue Eyes Dragon" style={IconStyle} />
+                <p>Angular</p>
+              </GridItemContent>
+            </GridItemWrapper>
+          </Col>
           
           <Col lg={2} md={3} sm={4} xs={6}>
             <GridItemWrapper>
@@ -122,14 +123,7 @@ export const Tech = () => {
           
           
          <Row><h1>Programming Languages</h1>
-         <Col lg={2} md={3} sm={4} xs={6}>
-            <GridItemWrapper>
-              <GridItemContent>
-                <img src={icon6} alt="Blue Eyes Dragon" style={IconStyle} />
-                <p>C</p>
-              </GridItemContent>
-            </GridItemWrapper>
-          </Col>
+         
           <Col lg={2} md={3} sm={4} xs={6}>
             <GridItemWrapper>
               <GridItemContent>
@@ -138,14 +132,7 @@ export const Tech = () => {
               </GridItemContent>
             </GridItemWrapper>
           </Col>
-          <Col lg={2} md={3} sm={4} xs={6}>
-            <GridItemWrapper>
-              <GridItemContent>
-                <img src={icon10} alt="Blue Eyes Dragon" style={IconStyle} />
-                <p>Python</p>
-              </GridItemContent>
-            </GridItemWrapper>
-          </Col>
+          
           <Col lg={2} md={3} sm={4} xs={6}>
             <GridItemWrapper>
               <GridItemContent>

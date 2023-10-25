@@ -84,11 +84,15 @@ function Skills() {
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="Image" style={IconStyle}/>
-                                <h1></h1>
+                                <h1>Verbal communication</h1>
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="Image" style={IconStyle}/>
-                                <h1></h1>
+                                <h1>Collaboration</h1>
+                            </div>
+                            <div className="item">
+                                <img src={meter3} alt="Image" style={IconStyle}/>
+                                <h1>Leadership</h1>
                             </div>
                             
                         </Carousel>
