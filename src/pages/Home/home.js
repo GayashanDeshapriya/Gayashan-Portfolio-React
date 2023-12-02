@@ -59,7 +59,7 @@ const Home = () => {
             display: "flex",
             justifyContent: "left",
             alignItems: "center",
-            paddingLeft:"200px"
+            paddingLeft:"150px"
         },
         textContainer: {
             display: "flex",
