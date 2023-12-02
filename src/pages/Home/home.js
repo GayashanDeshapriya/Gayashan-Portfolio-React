@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 import 'animate.css';
 import landingImage from "../../images/me.svg";
 import SocialIcons from "../../components/SocialIcons";
-import { Banner } from "./Banner";
+
 
 
 // Import statements...
