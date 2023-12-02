@@ -4,6 +4,7 @@ import { useInView } from "react-intersection-observer";
 import 'animate.css';
 import landingImage from "../../images/me.svg";
 import SocialIcons from "../../components/SocialIcons";
+import { Banner } from "./Banner";
 
 
 // Import statements...
@@ -14,7 +15,7 @@ const Home = () => {
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const [index, setIndex] = useState(1);
-    const toRotate = ["Web Designer", "UI/UX Designer", "Graphic Designer", "Full-Stack Developer"];
+    const toRotate = ["Full-Stack Developer"];
     const period = 2000;
   
     useEffect(() => {
@@ -56,14 +57,15 @@ const Home = () => {
         landing: {
             height: "calc(100% - 93px)",
             display: "flex",
-            justifyContent: "center",
+            justifyContent: "left",
             alignItems: "center",
+            paddingLeft:"200px"
         },
         textContainer: {
             display: "flex",
             flexDirection: "column",
             letterSpacing: "1px",
-            textAlign: "center",
+            textAlign: "left",
             zIndex: "1",
             color: "#fff",
             textShadow: "1px 1px 3px #000",
@@ -111,7 +113,8 @@ const Home = () => {
             animate={inView1 ? { y: 0, opacity: 1 } : { y: "-10vw", opacity: 0 }}
             transition={{ duration: 0.8, ease: "easeInOut" }}
           >
-            Hi! I'm Gayashan Deshapriya
+            
+            Hi! I'm <br/>Gayashan Deshapriya
           </motion.h1>
   
           <motion.p
@@ -125,7 +128,7 @@ const Home = () => {
             <br />{" "}
             <span
               className="txt-rotate"
-              dataPeriod="1000"
+              dataPeriod="10000"
               data-rotate='["Full Stack Developer", "Web Designer", "UI/UX Designer", "Graphic Designer"]'
             >
               <span className="wrap">{text}</span>
