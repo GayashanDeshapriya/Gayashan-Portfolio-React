@@ -8,6 +8,16 @@
       "credentialUrl": "",
       "bgcolor": "#232323",
       "id": "1"
+    },
+    {
+      "name": "Introduction to DevOps",
+      "org": "IBM",
+      "issued": "2023/12",
+      "expiry": "",
+      "credentialId": "",
+      "credentialUrl": "",
+      "bgcolor": "#232323",
+      "id": "2"
     }
   
 ]
