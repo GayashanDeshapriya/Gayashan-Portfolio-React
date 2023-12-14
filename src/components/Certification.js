@@ -4,8 +4,10 @@ import Modal from "react-modal";
 import { useState } from "react";
 import closeModal from "../images/close.svg";
 import img1 from '../images/Certificates/Python.jpg'
+import img2 from '../images/Certificates/Introduction to DevOps.jpg'
 
-const Certificates = ({ name, org, issued, bgcolor, credentialUrl, id }) => {
+
+const Certificates = ({ name, org, issued,img, bgcolor, credentialUrl, id }) => {
   const [ref, inView] = useInView({
     threshold: 0.5,
     triggerOnce: true,
@@ -45,7 +47,7 @@ const Certificates = ({ name, org, issued, bgcolor, credentialUrl, id }) => {
           <span className="viewWork">View Work &#8594;</span>
         </div>
         <div className="imageContainer col-6 d-flex align-items-center justify-content-center">
-          <img src={img1} alt="Laptop displaying application" />
+          <img src={img} alt="Certification" />
         </div>
       </div>
       <Modal

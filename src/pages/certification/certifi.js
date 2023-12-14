@@ -12,6 +12,7 @@ const Certify = () => {
         org={Certificates.org}
         issued={Certificates.issued}
         expiry={Certificates.expiry}
+        img={Certificates.img}
         credentialId={Certificates.credentialId}
         credentialUrl={Certificates.credentialUrl}
         url={Certificates.url}
