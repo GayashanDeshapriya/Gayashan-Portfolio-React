@@ -6,6 +6,7 @@ import Home from "../pages/Home/home";
 import Skills from "../pages/Skills/Skills";
 import Certify from "../pages/certification/certifi";
 import Badges from "../pages/Badges/Badge";
+import Education from "../pages/education/Education";
 
 
 
@@ -29,6 +30,8 @@ const AnimatedRoutes = ({ personalDetails }) => {
         }
       />
       <Route path="/skills" element={<Skills />} />
+
+      <Route path="/education" element={<Education />} />
 
       <Route path="/certificate" element={<Certify />} />
 

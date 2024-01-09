@@ -26,6 +26,10 @@ const NavLinks = () => {
         Skills/Technologies
         </NavLink>
 
+        <NavLink to="/education" onClick={() => setIsMenuOpen(false)}>
+          Education
+        </NavLink>
+
         <NavLink to="/certificate" onClick={() => setIsMenuOpen(false)}>
           Certifications
         </NavLink>
