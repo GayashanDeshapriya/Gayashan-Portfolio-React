@@ -46,10 +46,10 @@ const Landing = ({ name, tagline }) => {
 
   return (
     <section className="landing" style={styles.landing}>
+    
 
+   
       <div className="textContainer" style={styles.textContainer}>
-
-      
         
      <motion.h1
           className="name"
@@ -85,6 +85,7 @@ const Landing = ({ name, tagline }) => {
       </div>
 
       <SocialIcons />
+      
     </section>
   );
 };

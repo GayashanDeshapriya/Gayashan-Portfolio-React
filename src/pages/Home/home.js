@@ -59,12 +59,12 @@ const Home = () => {
             display: "flex",
             justifyContent: "left",
             alignItems: "center",
-            paddingLeft:"150px"
+            paddingLeft:"35px"
         },
         textContainer: {
             display: "flex",
             flexDirection: "column",
-            letterSpacing: "1px",
+            letterSpacing: "3px",
             textAlign: "left",
             zIndex: "1",
             color: "#fff",
@@ -104,6 +104,9 @@ const Home = () => {
   
     return (
       <section className="landing" style={styles.landing}>
+        <div className="Container">
+
+        
         <div className="textContainer" style={styles.textContainer}>
           <motion.h1
             className="name"
@@ -147,7 +150,8 @@ const Home = () => {
             alt=""
           />
         </div>
-        <SocialIcons />
+       <SocialIcons/>
+       </div>
       </section>
     );
   };

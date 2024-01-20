@@ -20,10 +20,13 @@
 } */
 
 .landing .socialIcons {
-  display: flex;
+  
   position: absolute;
   left: 50px;
   bottom: 20px;
+  
+  
+  
 }
 
 /* --- MEDIA QUERIES --- */

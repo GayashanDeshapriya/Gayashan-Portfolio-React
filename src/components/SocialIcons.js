@@ -2,8 +2,8 @@ const SocialIcons = () => {
   const styles = {
     icon: {
       textDecoration: "none",
-      fontSize: "30px",
-      padding: "15px",
+      fontSize: "35px",
+      padding: "25px",
       transition: "0.2s ease-in",
     },
   };
