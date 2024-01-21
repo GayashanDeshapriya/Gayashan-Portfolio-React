@@ -23,10 +23,4 @@ Portfolio website built in React
 * Babel
 * Netlify(Deployment)
 
-## Homepage visuals
-![Imgur](https://github.com/GayashanDeshapriya/my_portfolio/blob/master/src/images/Project%20images/full-stack.jpg)
-
-## About page visuals
-![Imgur](https://github.com/GayashanDeshapriya/my_portfolio/blob/master/src/images/Project%20images/About.jpg)
-
 
