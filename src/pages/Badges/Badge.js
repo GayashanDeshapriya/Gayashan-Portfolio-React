@@ -1,9 +1,7 @@
 import React from 'react'
 import BadgeCard from '../../components/BadgeCard'
-import { Container, Grid } from "@mui/material";
 import PageHeader from "../../components/PageHeader";
 import BadgeData from "./BadgesData.json"
-import { Stack } from 'react-bootstrap';
 
 const Badges = () => {
   const BadgeList = () =>
@@ -23,8 +21,7 @@ const Badges = () => {
       <section className="contact">
         <PageHeader title="Badges" description="who verified me" />
       </section>
-
-      <div className="row">
+      <div className='container'>
         <BadgeList />
       </div>
     </div>

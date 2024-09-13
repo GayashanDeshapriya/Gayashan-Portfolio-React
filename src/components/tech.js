@@ -6,19 +6,21 @@ import icon2 from "../images/Icons/ExpressJS-Dark.svg";
 import icon3 from "../images/Icons/Kotlin-Dark.svg";
 import icon4 from "../images/Icons/NodeJS-Dark.svg";
 import icon5 from "../images/Icons/AndroidStudio-Dark.svg";
-import icon6 from "../images/Icons/C.svg";
+import icon6 from "../images/Icons/DotNet.svg";
 import icon7 from "../images/Icons/HTML.svg";
 import icon8 from "../images/Icons/CSS.svg";
 import icon9 from "../images/Icons/React-Dark.svg";
-import icon10 from "../images/Icons/Python-Dark.svg";
-import icon11 from "../images/Icons/PHP-Dark.svg";
-import icon12 from "../images/Icons/Java-Dark.svg";
+import icon10 from "../images/Icons/Flutter-Dark.svg";
+import icon11 from "../images/Icons/CPP.svg";
+import icon12 from "../images/Icons/CS.svg";
 import icon13 from "../images/Icons/Github-Dark.svg";
-import icon14 from "../images/Icons/CPP.svg";
-import icon15 from "../images/Icons/MySQL-Dark.svg";
+import icon14 from "../images/Icons/microsoft-sql-server-logo-svgrepo-com.svg";
+import icon15 from "../images/Icons/Azure-Dark.svg";
 import icon16 from "../images/Icons/MongoDB.svg";
 import icon17 from "../images/Icons/Firebase-Dark.svg";
 import icon18 from "../images/Icons/Angular-Dark.svg";
+import icon19 from "../images/Icons/Git.svg";
+
 
 
 
@@ -44,11 +46,15 @@ const IconStyle = {
   padding: "20px"
 };
 
+const rowStyle = {
+  marginbottom: "150px"
+}
+
 export const Tech = () => {
   return (
     <Root>
       <Container fluid>
-        <Row><h1>Front-end vs. back-end languages</h1>
+        <Row style={rowStyle}><h1>Front-end vs. back-end languages</h1>
         <Col lg={2} md={3} sm={4} xs={6}>
             <GridItemWrapper>
               <GridItemContent>
@@ -73,18 +79,40 @@ export const Tech = () => {
               </GridItemContent>
             </GridItemWrapper>
          </Col>
-         <Col lg={2} md={3} sm={4} xs={6}>
+         {/* <Col lg={2} md={3} sm={4} xs={6}>
             <GridItemWrapper>
               <GridItemContent>
                 <img src={icon11} alt="Blue Eyes Dragon" style={IconStyle} />
                 <p>PHP</p>
               </GridItemContent>
             </GridItemWrapper>
-          </Col>
+          </Col> */}
           
-          
+          <Row style={rowStyle}><h1>Programming Languages</h1>
+         
+         <Col lg={2} md={3} sm={4} xs={6}>
+           <GridItemWrapper>
+             <GridItemContent>
+               <img src={icon11} alt="Blue Eyes Dragon" style={IconStyle} />
+               <p>C++</p>
+             </GridItemContent>
+           </GridItemWrapper>
+         </Col>
 
-         <Row><h2>Frameworks and Libraries</h2>
+         <Col lg={2} md={3} sm={4} xs={6}>
+           <GridItemWrapper>
+             <GridItemContent>
+               <img src={icon12} alt="Blue Eyes Dragon" style={IconStyle} />
+               <p>C#</p>
+             </GridItemContent>
+           </GridItemWrapper>
+         </Col>
+         
+         
+         
+         </Row> 
+
+         <Row  style={rowStyle}><h2>Frameworks and Libraries</h2>
           <Col lg={2} md={3} sm={4} xs={6}>
             <GridItemWrapper>
               <GridItemContent>
@@ -118,33 +146,23 @@ export const Tech = () => {
               </GridItemContent>
             </GridItemWrapper>
           </Col>
+          <Col lg={2} md={3} sm={4} xs={6}>
+           <GridItemWrapper>
+             <GridItemContent>
+               <img src={icon6} alt="Blue Eyes Dragon" style={IconStyle} />
+               <p>Dot Net</p>
+             </GridItemContent>
+           </GridItemWrapper>
+         </Col>
          </Row>
           
           
           
-         <Row><h1>Programming Languages</h1>
          
-          <Col lg={2} md={3} sm={4} xs={6}>
-            <GridItemWrapper>
-              <GridItemContent>
-                <img src={icon14} alt="Blue Eyes Dragon" style={IconStyle} />
-                <p>C++</p>
-              </GridItemContent>
-            </GridItemWrapper>
-          </Col>
           
-          <Col lg={2} md={3} sm={4} xs={6}>
-            <GridItemWrapper>
-              <GridItemContent>
-                <img src={icon12} alt="Blue Eyes Dragon" style={IconStyle} />
-                <p>Java</p>
-              </GridItemContent>
-            </GridItemWrapper>
-          </Col>
-          </Row>
           
-         
-          <h1>Mobile App Development</h1>
+         <Row  style={rowStyle}>
+         <h1>Mobile App Development</h1>
           <Col lg={2} md={3} sm={4} xs={6}>
             <GridItemWrapper>
               <GridItemContent>
@@ -161,13 +179,23 @@ export const Tech = () => {
               </GridItemContent>
             </GridItemWrapper>
           </Col>
+          <Col lg={2} md={3} sm={4} xs={6}>
+            <GridItemWrapper>
+              <GridItemContent>
+                <img src={icon10} alt="Summoned Skull" style={IconStyle} />
+                <p>Flutter</p>
+              </GridItemContent>
+            </GridItemWrapper>
+          </Col>
 
+         </Row>
+          
           <h1>Database Technologies</h1>
           <Col lg={2} md={3} sm={4} xs={6}>
             <GridItemWrapper>
               <GridItemContent>
-                <img src={icon15} alt="Summoned Skull" style={IconStyle} />
-                <p>My SQL</p>
+                <img src={icon14} alt="Summoned Skull" style={IconStyle} />
+                <p>Ms SQL</p>
               </GridItemContent>
             </GridItemWrapper>
           </Col>
@@ -191,11 +219,29 @@ export const Tech = () => {
 
 
           <h1>Other Essential Technologies</h1>
+
+          <Col lg={2} md={3} sm={4} xs={6}>
+            <GridItemWrapper>
+              <GridItemContent>
+                <img src={icon19} alt="Summoned Skull" style={IconStyle} />
+                <p>Git</p>
+              </GridItemContent>
+            </GridItemWrapper>
+          </Col>
           <Col lg={2} md={3} sm={4} xs={6}>
             <GridItemWrapper>
               <GridItemContent>
                 <img src={icon13} alt="Summoned Skull" style={IconStyle} />
                 <p>GitHub</p>
+              </GridItemContent>
+            </GridItemWrapper>
+          </Col>
+
+          <Col lg={2} md={3} sm={4} xs={6}>
+            <GridItemWrapper>
+              <GridItemContent>
+                <img src={icon15} alt="Summoned Skull" style={IconStyle} />
+                <p>Azure</p>
               </GridItemContent>
             </GridItemWrapper>
           </Col>

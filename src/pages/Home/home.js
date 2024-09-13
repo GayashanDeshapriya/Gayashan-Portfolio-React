@@ -59,7 +59,7 @@ const Home = () => {
             display: "flex",
             justifyContent: "left",
             alignItems: "center",
-            paddingLeft:"35px"
+            paddingLeft:"70px"
         },
         textContainer: {
             display: "flex",
@@ -87,7 +87,8 @@ const Home = () => {
             bottom: "0",
             opacity: "0.8",
             mixBlendMode: "lighten",
-            height: "90%",
+            height: "100%",
+            
         },
         
     };

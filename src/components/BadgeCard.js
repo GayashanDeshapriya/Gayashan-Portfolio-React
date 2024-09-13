@@ -1,18 +1,25 @@
 import React from 'react'
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+
 
 const BadgeCard = ({ name, org, Details, images }) => {
     return (
-        <div>
-           
-        </div>
+        <section className="contact">
+            <div>
+                <Card style={{ width: '18rem', height: '20rem' }}>
+                    <Card.Img variant="top" src={images} style={{ width: '10rem', height: '10rem' }} />
+                    <Card.Body>
+                        <Card.Title>{name}</Card.Title>
+                        <Card.Text>
+                            {Details}
+                        </Card.Text>
+                        <h1 variant="primary">{org}</h1>
+                    </Card.Body>
+                </Card>
+            </div>
+        </section>
+
     )
 }
-
 export default BadgeCard

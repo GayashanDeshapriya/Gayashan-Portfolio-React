@@ -26,17 +26,17 @@ const NavLinks = () => {
         Skills/Technologies
         </NavLink>
 
-        <NavLink to="/education" onClick={() => setIsMenuOpen(false)}>
+        {/* <NavLink to="/education" onClick={() => setIsMenuOpen(false)}>
           Education
-        </NavLink>
+        </NavLink> */}
 
         <NavLink to="/certificate" onClick={() => setIsMenuOpen(false)}>
           Certifications
         </NavLink>
 
-        <NavLink to="/badges" onClick={() => setIsMenuOpen(false)}>
+        {/* <NavLink to="/badges" onClick={() => setIsMenuOpen(false)}>
           Badges
-        </NavLink>
+        </NavLink> */}
         
         <NavLink to="/portfolio" onClick={() => setIsMenuOpen(false)}>
           Projects

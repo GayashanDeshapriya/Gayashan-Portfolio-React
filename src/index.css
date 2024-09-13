@@ -217,4 +217,8 @@ header {
   .closed {
     background-color: transparent;
   }
+
+  .row-spacing {
+    margin-bottom: 50px; /* Adjust the value as needed */
+  }
 }
